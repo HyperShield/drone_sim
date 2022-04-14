@@ -11,7 +11,7 @@
 #include "quadrotor.h"
 
 #define WAYPOINT 1
-#define ETH 0
+#define ETH 1
 
 #if ETH == 1
     #include "attitude_control2.h"
@@ -150,7 +150,7 @@ void get_sensor_measurements(quadrotor *Quad, vec3 *acc,vec3 *gyro, vec4 pwm)
     pr[1] = (vec3){0,Quadparams.l,-Quadparams.h};
     pr[2] = (vec3){-Quadparams.l,0,-Quadparams.h};
     pr[3] = (vec3){0,-Quadparams.l,-Quadparams.h};
-    //Blade flapping
+    //Blade flapping and induced drag
     for(i = 0; i < 4;++i){
         vec3 vi = vec3_add(mat3_mult_vec3(mat3_transpose(R),Quad->x.v),vec3_cross(Quad->x.w,pr[i]));
         float Ui = sqrtf(Quadparams.u_max*Quadparams.u_max*pwm.a[i]);
@@ -231,7 +231,7 @@ void dynamics(quadrotor *Quad, vec3 p_n, vec3 v_n, vec3 E, vec3 w_b_nb, vec3 *do
     pr[1] = (vec3){0,Quadparams.l,-Quadparams.h};
     pr[2] = (vec3){-Quadparams.l,0,-Quadparams.h};
     pr[3] = (vec3){0,-Quadparams.l,-Quadparams.h};
-    //Blade flapping
+    //Blade flapping and induced drag
     for(i = 0; i < 4;++i){
         vec3 vi = vec3_add(mat3_mult_vec3(mat3_transpose(R),v_n),vec3_cross(w_b_nb,pr[i]));
 
