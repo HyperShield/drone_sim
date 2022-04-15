@@ -17,7 +17,7 @@ Caveats:
 2. When the quadrotor operator is running you can left mouse click to change the camera angle.
 3. To stop the quadrotor operator press escape or right mouse click.
 4. Make sure the quadrotor operator is not already running before starting it again. Otherwise two of them will run concurrenlty and things will be messed up.
-5. Blender_socket is used for linux systems while blender_socket_windows is for windows systems (project is set up for linux). The windows version requires Ws2_32.lib
+5. Blender_socket is used for linux systems while blender_socket_windows is for windows systems (project is set up for linux). The windows version requires ws2_32.lib
 
 # Demonstration
 
