@@ -3,7 +3,7 @@ A simple drone sim written in C (oh god)
 
 This project is still under development.
 
-The drone parameters is take from:
+The drone parameters are taken from:
 
 Aircraft Control and Simulation: Dynamics, Controls Design, and Autonomous Systems, Third Edition. Brian L. Stevens, Frank L. Lewis and Eric N. Johnson.
 
