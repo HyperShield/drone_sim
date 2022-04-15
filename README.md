@@ -6,9 +6,9 @@ How to use:
 1. Run the code
 2. Open the blend file and run the script.
 3. Run the quadrotor operator.
- - Make sure that Developer Extras is enabled under Settings->Interface
- - Make sure space bar action is set to search under Settings->Keymap
- - Press space and write quadrotor, the operator should be top of the lsit.
+   - Make sure that Developer Extras is enabled under Settings->Interface
+   - Make sure space bar action is set to search under Settings->Keymap
+   - Press space and write quadrotor, the operator should be top of the lsit.
 		
 		
 Caveats:
