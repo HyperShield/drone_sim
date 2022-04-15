@@ -1,6 +1,12 @@
 # drone_sim
 A simple drone sim written in C (oh god)
 
+This project is still under development.
+
+The drone parameters is take from:
+
+Aircraft Control and Simulation: Dynamics, Controls Design, and Autonomous Systems, Third Edition. Brian L. Stevens, Frank L. Lewis and Eric N. Johnson.
+
 How to use:
 
 1. Run the code
@@ -18,6 +24,4 @@ Caveats:
 3. To stop the quadrotor operator press escape or right mouse click.
 4. Make sure the quadrotor operator is not already running before starting it again. Otherwise two of them will run concurrenlty and things will be messed up.
 5. Blender_socket is used for linux systems while blender_socket_windows is for windows systems. The windows version requires Ws2_32.lib
-
-
 
