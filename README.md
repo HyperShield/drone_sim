@@ -1,7 +1,23 @@
 # drone_sim
 A simple drone sim written in C (oh god)
 
-This project is still under development.
+Features:
+- Euler angle based Extended Kalman filter for state estimation.
+- Discrete PID controller with derivative filter and anti-windup
+- Sensor models with normally distributed noise using box-muller transform.
+- Includes rotor dynamics such as blade flapping and induced drag.
+- Numerical integration of the continuous dynamics using RK4.
+- Waypoint tracking of random waypoints.
+- No dynamic allocation (The implementation runs on average 0.5 ms on a STM32F401).
+- Real-time visualisation of the simulation using blender.
+- Option for quaternion based attitude controller (ETH).
+
+This library is a simple educational example of a quadrotor autopilot and is not meant for real use. Although, the autopilot has been implemented and flight tested on a STEVAL-Drone. A repository of the flight proven code will be available in the future.
+
+This project is still under development. Todo list:
+- Implement MEKF
+- Replace LU decomposition with Cholesky decomposition
+- Implement MPC-based controller
 
 The drone parameters are taken from:
 
